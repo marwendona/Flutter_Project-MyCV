@@ -3,6 +3,7 @@ import 'package:mycv/Education/education.dart';
 import 'package:mycv/ProfessionalExperience/professional_experience.dart';
 import 'package:mycv/Projects/projects.dart';
 import 'package:mycv/Skills/skills.dart';
+import 'package:mycv/utils/style.dart';
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({Key? key}) : super(key: key);
 
@@ -28,6 +29,8 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             title: const Text("Projects"),
+            leading: const Icon(Icons.work, color: Colors.teal),
+            trailing: const Icon(Icons.arrow_right, color: Colors.teal),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -38,6 +41,8 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             title: const Text("Professional Experience"),
+            leading: const Icon(Icons.business, color: Colors.teal),
+            trailing: const Icon(Icons.arrow_right, color: Colors.teal),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -48,6 +53,8 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             title: const Text("Education"),
+            leading: const Icon(Icons.school, color: Colors.teal),
+            trailing: const Icon(Icons.arrow_right, color: Colors.teal),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -58,6 +65,8 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             title: const Text("Skills"),
+            leading: const Icon(Icons.lightbulb, color: Colors.teal),
+            trailing: const Icon(Icons.arrow_right, color: Colors.teal),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(

@@ -72,9 +72,9 @@ class _ProfessionalExperiencePageState extends State<ProfessionalExperiencePage>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(duration, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+        Text(duration, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
         const SizedBox(height: 8),
-        Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+        Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white)),
         const SizedBox(height: 8),
         Text(description),
       ],
