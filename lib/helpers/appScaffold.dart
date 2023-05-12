@@ -30,19 +30,22 @@ class _AppScaffoldState extends State<AppScaffold> {
     return Scaffold(
       drawer: widget.drawer,
       appBar: AppBar(
-        title: Text(widget.title),
+          title: Text(widget.title,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold)),
           backgroundColor: Colors.teal,
-        actions:[
-          IconButton(
-            icon: const Icon(Icons.dark_mode),
-            onPressed: () {
-              setState(() {
-                AppScaffold.isDarkMode = !AppScaffold.isDarkMode;
-              });
-            },
-          ),
-        ]
-      ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.dark_mode),
+              onPressed: () {
+                setState(() {
+                  AppScaffold.isDarkMode = !AppScaffold.isDarkMode;
+                });
+              },
+            ),
+          ]),
       body: widget.body,
       floatingActionButton: widget.withFloatingActionButton
           ? widget.floatingActionButton
